@@ -6,9 +6,9 @@ pipeline {
        stage('Build'){
           steps {
             echo 'Building..,'
-			script{
-               python ./app/my_source.py
-			   }
+			
+            sh 'python ./app/my_source.py'
+			
           }
        }
        stage('Test'){
