@@ -6,6 +6,7 @@ pipeline {
        stage('Build'){
           steps {
             echo 'Building..,'
+            python ./app/my_source.py
           }
        }
        stage('Test'){
@@ -20,5 +21,5 @@ pipeline {
        }       
    
    }
-   
+  
 }
